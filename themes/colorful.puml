@@ -147,7 +147,7 @@ mindmapDiagram {
 stateDiagram {
     BackgroundColor Peru
     LineColor Gray
-    FontColor #333
+    FontColor #fff
 
     arrow {
         FontSize 12
