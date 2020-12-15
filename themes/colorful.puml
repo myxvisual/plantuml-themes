@@ -76,6 +76,7 @@ skinparam Sequence {
     }
 }
 
+!startsub mindmapDiagram
 <style>
 mindmapDiagram {
     RoundCorner 24
@@ -111,3 +112,4 @@ mindmapDiagram {
     }
 }
 </style>
+!endsub
