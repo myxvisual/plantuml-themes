@@ -1,0 +1,113 @@
+!$RED = "#FF006E"
+!$BLUE = "#3A86FF"
+!$ORANGE = "#FB5607"
+!$YELLOW = "#FFBE0B"
+!$PURPLE = "#8338EC"
+
+!$RED80 = %string($RED + "80")
+!$BLUE80 = %string($BLUE + "80")
+!$ORANGE80 = %string($ORANGE + "80")
+!$YELLOW80 = %string($YELLOW + "80")
+!$PURPLE80 = %string($PURPLE + "80")
+
+!$RED30 = %string($RED + "30")
+!$BLUE30 = %string($BLUE + "30")
+!$ORANGE30 = %string($ORANGE + "30")
+!$YELLOW30 = %string($YELLOW + "30")
+!$PURPLE30 = %string($PURPLE + "30")
+
+
+skinparam useBetaStyle true
+skinparam shadowing false
+skinparam ParticipantPadding 40
+skinparam BoxPadding 40
+
+skinparam Agent {
+    BorderColor transparent
+}
+
+skinparam Note {
+    BackGroundColor $RED
+    FontColor #fff
+    FontSize 12
+    BorderThickness 0
+}
+
+skinparam Sequence {
+    ArrowColor #111
+    NewpageSeparatorColor #fff
+    ArrowFontColor #111
+    LifeLine {
+        BorderColor $BLUE80
+        BackgroundColor $BLUE30
+    }
+    Participant {
+        BorderColor $BLUE
+        BackgroundColor $BLUE
+        ' FontName Impact
+        FontSize 12
+        FontColor #fff
+    }
+    Reference {
+        HeaderBackgroundColor $RED
+        BackgroundColor $RED80
+        BorderColor $RED
+        FontColor #333
+        FontStyle normal
+    }
+    Box {
+        BackgroundColor #eee
+        BorderColor transparent
+        FontColor #333
+        FontStyle normal
+    }
+    Group {
+        BackgroundColor $YELLOW
+        BodyBackgroundColor $YELLOW30
+        BorderThickness 1
+        FontColor #111
+    }
+    Actor {
+        BorderColor #666
+        BackgroundColor $BLUE
+        FontColor #666
+        FontSize 14
+        ' FontName Aapex
+    }
+}
+
+<style>
+mindmapDiagram {
+    RoundCorner 24
+    FontColor #fff
+    node {
+        BackGroundColor $BLUE
+        LineColor $BLUE80
+    }
+
+    :depth(0) {
+        BackGroundColor $YELLOW
+        LineColor $YELLOW80
+    }
+
+    :depth(1) {
+        BackGroundColor $ORANGE
+        LineColor $ORANGE80
+    }
+
+    :depth(2) {
+        BackGroundColor $RED
+        LineColor $RED80
+    }
+
+    :depth(3) {
+        BackGroundColor $PURPLE
+        LineColor $PURPLE80
+    }
+    
+    :depth(4) {
+        BackGroundColor $BLUE
+        LineColor $BLUE80
+    }
+}
+</style>
