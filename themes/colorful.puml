@@ -1,3 +1,18 @@
+''
+'' Author: myxvisual
+'' Copyright (c) 2019 by myxvisual
+' https://plantuml.com/zh/sitemap-language-specification
+' https://plantuml.com/zh/style-evolution
+' https://plantuml.com/zh/skinparam
+' https://plantuml-documentation.readthedocs.io/en/latest/formatting/all-skin-params.html
+' https://plantuml.com/zh/preprocessing
+' https://plantuml.com/zh/external-links
+
+' !$BGCOLOR = "#222"
+' https://plantuml-documentation.readthedocs.io/en/latest/formatting/all-skin-params.html
+
+!$THEME = "colorful"
+
 !$RED = "#FF006E"
 !$BLUE = "#3A86FF"
 !$ORANGE = "#FB5607"
@@ -76,6 +91,24 @@ skinparam Sequence {
     }
 }
 
+skinparam state {
+    StartColor #FB5607
+    EndColor #8338EC
+    FontColor #fff
+
+    BackgroundColor #3A86FF
+    BorderColor transparent
+
+    BackgroundColor<<Warning>> #FF006E
+    BorderColor<<Warning>> transparent
+
+    BackgroundColor<<Group>> #8338EC
+    BorderColor<<Group>> transparent
+
+    BackgroundColor<<Item>> #FFBE0B
+    BorderColor<<Item>> transparent
+}
+
 <style>
 mindmapDiagram {
     RoundCorner 24
@@ -108,6 +141,17 @@ mindmapDiagram {
     :depth(4) {
         BackGroundColor $BLUE
         LineColor $BLUE80
+    }
+}
+
+stateDiagram {
+    BackgroundColor Peru
+    LineColor Gray
+    FontColor #333
+
+    arrow {
+        FontSize 12
+        LineColor #333
     }
 }
 </style>
