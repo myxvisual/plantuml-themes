@@ -91,7 +91,26 @@ skinparam Sequence {
     }
 }
 
-skinparam state {
+skinparam Activity {
+    StartColor $PURPLE
+    BarColor $YELLOW
+    EndColor $PURPLE
+    FontColor #FFF
+    BackgroundColor $BLUE
+    BorderColor transparent
+
+    ArrowColor #333
+    BackgroundColor<< Begin >> $PURPLE
+}
+
+skinparam Partition {
+    BackgroundColor #eee
+    BorderColor #999
+    BorderThickness 1
+    FontSize 12
+}
+
+skinparam State {
     StartColor #FB5607
     EndColor #8338EC
     FontColor #fff
