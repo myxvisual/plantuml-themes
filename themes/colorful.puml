@@ -128,6 +128,20 @@ skinparam State {
     BorderColor<<Item>> transparent
 }
 
+skinparam Usecase {
+    BackgroundColor $BLUE
+    BorderColor transparent
+    FontColor #fff
+    ArrowColor #333
+    StereotypeFontColor red
+}
+
+skinparam Package {
+    BorderThickness 1
+    BorderColor #999
+    FontColor #333
+}
+
 <style>
 mindmapDiagram {
     RoundCorner 24
@@ -164,9 +178,7 @@ mindmapDiagram {
 }
 
 stateDiagram {
-    BackgroundColor Peru
-    LineColor Gray
-    FontColor #fff
+    FontColor #333
 
     arrow {
         FontSize 12
