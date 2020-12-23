@@ -25,6 +25,12 @@
 !$YELLOW80 = %string($YELLOW + "80")
 !$PURPLE80 = %string($PURPLE + "80")
 
+!$RED50 = %string($RED + "50")
+!$BLUE50 = %string($BLUE + "50")
+!$ORANGE50 = %string($ORANGE + "50")
+!$YELLOW50 = %string($YELLOW + "50")
+!$PURPLE50 = %string($PURPLE + "50")
+
 !$RED30 = %string($RED + "30")
 !$BLUE30 = %string($BLUE + "30")
 !$ORANGE30 = %string($ORANGE + "30")
