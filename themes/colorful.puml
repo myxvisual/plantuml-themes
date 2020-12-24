@@ -105,10 +105,13 @@
 !$PINK08 = opacity($PINK, $hex08)
 !$PINK09 = opacity($PINK, $hex09)
 
-skinparam useBetaStyle true
+skinparam useBetaStyle false
 skinparam shadowing false
 skinparam ParticipantPadding 40
 skinparam BoxPadding 40
+
+!$WHITE = "#FFFFFF"
+!$BLACK = "#000000"
 
 skinparam Agent {
     BorderColor transparent
@@ -203,10 +206,18 @@ skinparam State {
 
 skinparam Usecase {
     BackgroundColor $BLUE
+    BorderThickness 1
     BorderColor transparent
     FontColor #fff
     ArrowColor #333
     StereotypeFontColor red
+}
+
+skinparam Rectangle {
+    BackgroundColor $BLUE
+    FontColor $WHITE
+    BorderColor transparent
+    BorderThickness 0
 }
 
 skinparam Package {
