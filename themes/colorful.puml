@@ -105,7 +105,6 @@
 !$PINK08 = opacity($PINK, $hex08)
 !$PINK09 = opacity($PINK, $hex09)
 
-skinparam useBetaStyle false
 skinparam shadowing false
 skinparam ParticipantPadding 40
 skinparam BoxPadding 40
