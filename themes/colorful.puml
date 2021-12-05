@@ -1,0 +1,286 @@
+''
+'' Author: myxvisual
+'' Copyright (c) 2019 by myxvisual
+' https://plantuml.com/zh/sitemap-language-specification
+' https://plantuml.com/zh/style-evolution
+' https://plantuml.com/zh/skinparam
+' https://plantuml-documentation.readthedocs.io/en/latest/formatting/all-skin-params.html
+' https://plantuml.com/zh/preprocessing
+' https://plantuml.com/zh/external-links
+
+' !$BGCOLOR = "#222"
+' https://plantuml-documentation.readthedocs.io/en/latest/formatting/all-skin-params.html
+
+!$THEME = "colorful"
+
+!$hex09= "00"
+!$hex01 = "19"
+!$hex02 = "33"
+!$hex03 = "4c"
+!$hex04 = "66"
+!$hex05 = "7f"
+!$hex06 = "99"
+!$hex07 = "b2"
+!$hex08 = "cc"
+!$hex09 = "e5"
+!$hex10 = "ff"
+
+!unquoted function opacity($color, $opacity = $hex05) return $color + $opacity
+
+!$RED = "#FF0060"
+!$BLUE = "#3A86FF"
+!$ORANGE = "#FB5607"
+!$YELLOW = "#FFBE0B"
+!$GREEN = "#008000"
+!$PURPLE = "#8338EC"
+!$PINK = "#FF0080"
+
+!$RED01 = opacity($RED, $hex01)
+!$RED02 = opacity($RED, $hex02)
+!$RED03 = opacity($RED, $hex03)
+!$RED04 = opacity($RED, $hex04)
+!$RED05 = opacity($RED, $hex05)
+!$RED06 = opacity($RED, $hex06)
+!$RED07 = opacity($RED, $hex07)
+!$RED08 = opacity($RED, $hex08)
+!$RED09 = opacity($RED, $hex09)
+
+!$BLUE01 = opacity($BLUE, $hex01)
+!$BLUE02 = opacity($BLUE, $hex02)
+!$BLUE03 = opacity($BLUE, $hex03)
+!$BLUE04 = opacity($BLUE, $hex04)
+!$BLUE05 = opacity($BLUE, $hex05)
+!$BLUE06 = opacity($BLUE, $hex06)
+!$BLUE07 = opacity($BLUE, $hex07)
+!$BLUE08 = opacity($BLUE, $hex08)
+!$BLUE09 = opacity($BLUE, $hex09)
+
+!$ORANGE01 = opacity($ORANGE, $hex01)
+!$ORANGE02 = opacity($ORANGE, $hex02)
+!$ORANGE03 = opacity($ORANGE, $hex03)
+!$ORANGE04 = opacity($ORANGE, $hex04)
+!$ORANGE05 = opacity($ORANGE, $hex05)
+!$ORANGE06 = opacity($ORANGE, $hex06)
+!$ORANGE07 = opacity($ORANGE, $hex07)
+!$ORANGE08 = opacity($ORANGE, $hex08)
+!$ORANGE09 = opacity($ORANGE, $hex09)
+
+!$YELLOW01 = opacity($YELLOW, $hex01)
+!$YELLOW02 = opacity($YELLOW, $hex02)
+!$YELLOW03 = opacity($YELLOW, $hex03)
+!$YELLOW04 = opacity($YELLOW, $hex04)
+!$YELLOW05 = opacity($YELLOW, $hex05)
+!$YELLOW06 = opacity($YELLOW, $hex06)
+!$YELLOW07 = opacity($YELLOW, $hex07)
+!$YELLOW08 = opacity($YELLOW, $hex08)
+!$YELLOW09 = opacity($YELLOW, $hex09)
+
+!$GREEN01 = opacity($GREEN, $hex01)
+!$GREEN02 = opacity($GREEN, $hex02)
+!$GREEN03 = opacity($GREEN, $hex03)
+!$GREEN04 = opacity($GREEN, $hex04)
+!$GREEN05 = opacity($GREEN, $hex05)
+!$GREEN06 = opacity($GREEN, $hex06)
+!$GREEN07 = opacity($GREEN, $hex07)
+!$GREEN08 = opacity($GREEN, $hex08)
+!$GREEN09 = opacity($GREEN, $hex09)
+
+!$PURPLE01 = opacity($PURPLE, $hex01)
+!$PURPLE02 = opacity($PURPLE, $hex02)
+!$PURPLE03 = opacity($PURPLE, $hex03)
+!$PURPLE04 = opacity($PURPLE, $hex04)
+!$PURPLE05 = opacity($PURPLE, $hex05)
+!$PURPLE06 = opacity($PURPLE, $hex06)
+!$PURPLE07 = opacity($PURPLE, $hex07)
+!$PURPLE08 = opacity($PURPLE, $hex08)
+!$PURPLE09 = opacity($PURPLE, $hex09)
+
+!$PINK01 = opacity($PINK, $hex01)
+!$PINK02 = opacity($PINK, $hex02)
+!$PINK03 = opacity($PINK, $hex03)
+!$PINK04 = opacity($PINK, $hex04)
+!$PINK05 = opacity($PINK, $hex05)
+!$PINK06 = opacity($PINK, $hex06)
+!$PINK07 = opacity($PINK, $hex07)
+!$PINK08 = opacity($PINK, $hex08)
+!$PINK09 = opacity($PINK, $hex09)
+
+skinparam shadowing false
+skinparam ParticipantPadding 40
+skinparam BoxPadding 40
+
+!$WHITE = "#FFFFFF"
+!$BLACK = "#000000"
+
+skinparam Agent {
+    BorderColor transparent
+}
+
+skinparam Note {
+    BackGroundColor $RED
+    FontColor #fff
+    FontSize 12
+    BorderThickness 0
+}
+
+skinparam Sequence {
+    ArrowColor #111
+    NewpageSeparatorColor #fff
+    ArrowFontColor #111
+
+    LifeLine {
+        BorderColor $BLUE05
+        BackgroundColor $BLUE03
+    }
+
+    Participant {
+        BorderColor $BLUE
+        BackgroundColor $BLUE
+        FontSize 12
+        FontColor #fff
+    }
+
+    Reference {
+        HeaderBackgroundColor $RED
+        BackgroundColor $RED05
+        BorderColor $RED
+        FontColor #333
+        FontStyle normal
+    }
+    Box {
+        BackgroundColor #eee
+        BorderColor transparent
+        FontColor #333
+        FontStyle normal
+    }
+    Group {
+        BackgroundColor $BLUE
+        BodyBackgroundColor $BLUE01
+        BorderThickness 1
+        FontColor #fff
+        HeaderFontColor #fff
+    }
+    Actor {
+        BorderColor $BLUE
+        BackgroundColor $BLUE
+        FontColor #666
+        FontSize 14
+        ' FontName Aapex
+    }
+}
+
+skinparam Activity {
+    StartColor $PURPLE
+    BarColor $YELLOW
+    EndColor $PURPLE
+
+    FontColor #FFF
+    BackgroundColor $BLUE
+    BorderColor transparent
+
+    DiamondFontColor #333
+    DiamondBackgroundColor $YELLOW
+    DiamondBorderColor transparent
+
+
+    BackgroundColor<< Begin >> $PURPLE
+}
+
+skinparam Partition {
+    BackgroundColor #eee
+    BorderColor #999
+    BorderThickness 1
+    FontSize 12
+}
+
+skinparam State {
+    StartColor $ORANGE
+    EndColor $PURPLE
+    FontColor #fff
+
+    BackgroundColor $BLUE
+    BorderColor transparent
+
+    BackgroundColor<<Warning>> $PINK
+    BorderColor<<Warning>> transparent
+
+    BackgroundColor<<Group>> $PURPLE
+    BorderColor<<Group>> transparent
+
+    BackgroundColor<<Item>> $YELLOW
+    BorderColor<<Item>> transparent
+}
+
+skinparam Usecase {
+    BackgroundColor $BLUE
+    BorderThickness 1
+    BorderColor transparent
+    FontColor #fff
+    ArrowColor #333
+    StereotypeFontColor $RED
+}
+
+skinparam Rectangle {
+    BackgroundColor #fff
+    FontColor $WHITE
+    BorderColor $BLUE
+    BorderThickness 1
+}
+
+skinparam Package {
+    BackgroundColor #fff
+    BorderThickness 1
+    BorderColor $BLUE
+    FontColor #ORANGE
+}
+
+
+skinparam Actor {
+    BorderColor $BLUE
+    FontColor #ddd
+    BackgroundColor $BLUE
+}
+
+skinparam Arrow {
+    Color $BLUE
+    FontColor $BLUE
+}
+
+skinparam TitleFontColor $PURPLE
+' skinparam actorStyle awesome
+
+<style>
+mindmapDiagram {
+    RoundCorner 24
+    FontColor #fff
+    node {
+        BackGroundColor $BLUE
+        LineColor $BLUE05
+    }
+
+    :depth(0) {
+        BackGroundColor $YELLOW
+        LineColor $YELLOW05
+    }
+
+    :depth(1) {
+        BackGroundColor $ORANGE
+        LineColor $ORANGE05
+    }
+
+    :depth(2) {
+        BackGroundColor $RED
+        LineColor $RED05
+    }
+
+    :depth(3) {
+        BackGroundColor $PURPLE
+        LineColor $PURPLE05
+    }
+
+    :depth(4) {
+        BackGroundColor $BLUE
+        LineColor $BLUE05
+    }
+}
+</style>
